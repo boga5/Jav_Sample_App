@@ -37,7 +37,7 @@
         <dependency>
             <groupId>org.springframework</groupId>
             <artifactId>spring-core</artifactId>
-            <version>4.2.5.RELEASE</version>
+            <version>4.3.18</version>
         </dependency>
  
         <!-- http://mvnrepository.com/artifact/org.springframework/spring-web -->
@@ -141,6 +141,7 @@
          
             <!-- Config: Maven Tomcat Plugin -->
             <!-- http://mvnrepository.com/artifact/org.apache.tomcat.maven/tomcat7-maven-plugin -->
+<<<<<<< HEAD
 
 <plugin>
 <groupId>org.apache.maven.plugins</groupId>
@@ -152,6 +153,19 @@
 </configuration>
 </plugin>
             <plugin>
+=======
+            
+		<plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+            <artifactId>maven-compiler-plugin</artifactId>
+            <version>3.0</version>
+            <configuration>
+                <source>6</source>
+                <target>1.6</target>
+            </configuration>
+        </plugin>
+		<plugin>
+>>>>>>> f2b2df4a45c3677e5b9d15ee294251cfab1e06e8
                 <groupId>org.apache.tomcat.maven</groupId>
                 <artifactId>tomcat7-maven-plugin</artifactId>
                 <version>2.2</version>
